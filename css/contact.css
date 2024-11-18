@@ -1,0 +1,109 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Laisse l'espace pour le contenu */
+    min-height: 100vh; /* Minimum height of the body to ensure footer sticks to the bottom */
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Section Contact - Centrage et cadre blanc */
+.contact-container {
+    background-color: white; /* Fond blanc pour le cadre */
+    padding: 40px;
+    max-width: 600px; /* Limite la largeur du cadre */
+    margin: 100px auto 20px; /* Centrage de la section avec espace en haut */
+    border-radius: 10px; /* Coins arrondis pour le cadre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du cadre */
+    width: 100%; /* Occupe toute la largeur disponible jusqu'à la largeur max */
+    text-align: center;
+    box-sizing: border-box; /* Inclut padding dans la largeur */
+}
+
+/* Style du titre */
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Informations de contact */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px; /* Espacement entre les éléments de liste */
+}
+
+/* Liens non cliquables avec aucun changement */
+.contact-info a {
+    color: #333; /* Couleur du texte des liens */
+    text-decoration: none; /* Pas de soulignement */
+    pointer-events: auto; /* Assure que le lien est cliquable */
+    transition: color 0.3s ease; /* Transition de couleur pour l'effet au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Permet de coller le footer en bas */
+}

@@ -1,0 +1,148 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of the body to ensure footer sticks to the bottom */
+}
+
+/* Contenu principal */
+main {
+    flex-grow: 1; /* Cela permet de pousser le footer au bas de la page */
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Carrousel Cube */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* 80% de la hauteur de l'écran pour centrer le carrousel */
+    perspective: 1000px;
+}
+
+.cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotateCube 40s infinite linear;
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front  { transform: translateZ(150px); }
+.right  { transform: rotateY(90deg) translateZ(150px); }
+.back   { transform: rotateY(180deg) translateZ(150px); }
+.left   { transform: rotateY(-90deg) translateZ(150px); }
+
+.side img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Animation de rotation du cube */
+@keyframes rotateCube {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Texte sous le carrousel */
+.carousel-text {
+    text-align: center;
+    margin-top: 30px; /* Espacement avec le carrousel */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%; /* Largeur du texte */
+    max-width: 800px; /* Largeur maximale pour que le texte ne s'étire pas trop */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.carousel-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

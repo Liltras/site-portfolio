@@ -1,0 +1,149 @@
+semestre 1:
+
+R101 Initiation aux réseaux informatiques
+R102 Principe et architecture des réseaux
+R103 Réseaux locaux et équipements actifs
+R104 Fondamentaux des systèmes électroniques
+R105 Supports de transmission pour les réseaux locaux
+R106 Architecture des systèmes numériques et informatiques
+R107 Fondamentaux de la programmation
+R108 Bases des systèmes d'exploitation
+R109 Introduction aux technologies Web
+R110 Anglais de communication et initiation au vocabulaire technique
+R111 Expression-Culture-Communication Professionnelles
+R112 PPP : Projet Personnel et Professionnel
+R113 Mathématiques du signal
+R114 Mathématiques des transmissions
+R115 Gestion de projet
+
+
+sae semestre 1:
+
+SAÉ11 Sensibilisation à l'hygiène informatique et à la cybersécurité
+SAÉ12 S’initier aux réseaux informatiques
+SAÉ13 Découvrir un dispositif de transmission
+SAÉ14 : se présenter sur Internet
+SAÉ15 Traiter des données
+
+
+semestre 2:
+
+R201 Technologie de l'internet 1 - 2
+R202 - Administration système et virtualisation
+R203 - Bases des services réseaux
+R204 Initiation à la téléphonie d'entreprise
+R205 Signaux et Systèmes pour les transmissions
+R206 Numérisation de l’information
+R207 Sources de données
+R208 Analyse et traitement de données structurées -- NON ALT
+R209 Initiation au développement Web
+R210 Anglais de communication et développement de l’anglais technique
+R211 Expression-Culture-Communication Professionnelles 2
+R212 PPP : Projet Personnel et Professionnel
+R213 Mathématiques des systèmes numériques
+R214 Analyse mathématique des signaux
+
+
+sae semestre 2:
+
+SAÉ21 Construire un réseau informatique pour une petite structure
+SAÉ22 Mesurer et caractériser un signal ou un système 
+SAÉ23 Mettre en place une solution informatique pour l’entreprise 
+SAÉ24 Projet intégratif
+
+
+semestre 3:
+
+R301 Réseaux de campus
+R302 Réseaux opérateurs
+R303 Linux HA & Kurbernetes
+R304 Services réseaux avancés et Annuaires unifiés
+R305 Chaînes de transmissions numériques
+R306 Fibres optiques et propagation
+R307 - Technologies d'accès
+R308 Consolidation de la programmation
+R309 Programmation événementielle
+R310 Gestion d'un système de bases de données
+R311 Anglais professionnel
+R312 Expression-Culture-Communication professionnelles : Savoir collaborer
+R313 Projet Personnel et Professionnel
+R314 Analyse de Fourier
+R315 gestion de projet
+
+
+semestre 3 IOM:
+
+R316 intro à l'internet des objets
+R317 Collecte et traitement de données issues IoT
+SAÉ304 Découvrir et mettre en place un réseau IoT
+
+
+sae semestre 3:
+
+SAÉ3 Portfolio
+SAÉ301 Mettre en oeuvre un système de transmission
+SAÉ302 Développer des applications communicantes
+SAÉ303 Concevoir un réseau multi-sites
+
+
+semestre 4:
+
+Portfolio
+
+R4.01 infrastructure de sécurité
+R4.02 Transmissions avancées
+R4.03 Physique des télécoms
+R4.04 Réseaux cellulaires
+R4.05 Automatisation des tâches d'administration
+R4.06 Anglais professionnel 2
+R4.07 Expression-Culture-Communication professionnelles : Préparer l'insertion professionnelle
+R4.08 Projet Personnel et Professionnel
+
+
+semestre 4 IOM:
+
+SAÉ4.IOM.01 | Implémenter les réseaux et protocoles sans fil dédiés à l'IoT
+R4.IOM.09 Réseaux sans fil pour l'IoT : MAC et routage
+R4.IOM.10 Cryptographie
+R4.IOM.11 Réseaux sans fil pour l'IoT : couche physique
+
+
+semestre 5:
+
+R5.01 WiFi avancé
+R5.02 Supervision des réseaux
+R5.03 Ingénierie de systèmes télécoms
+R5.04 Cycle de vie d'un projet informatique
+R5.05 Anglais : Insertion professionnelle 1
+R5.06 Expression-Culture-Communication professionnelles : S'intégrer dans une organisation
+R5.07 Projet Personnel et Professionnel
+R5.08 Gestion de projets 3 : Mener un projet professionnel
+
+
+semestre 5 IOM:
+
+R5.IOM.09 Architectures IoT sécurisées
+R5.IOM.10 Conception et étude de performance des réseaux IoT
+R5.IOM.11 Réseaux cellulaires dédiés à l'IoT
+SAÉ5.IOM.03 Qualifier les architectures de réseaux hybrides dédiées à l'IoT
+
+
+sae semestre 5:
+
+Portfolio S5
+SAÉ 5.01 Concevoir, réaliser et présenter une solution technique
+SAÉ 5.02 Piloter un projet informatique
+
+
+semestre 6:
+
+PORTFOLIO BUT3
+R6.01 Anglais : Insertion professionnelle 2
+R6.02 Expression-Culture-Communication : Communiquer en tant que futur cadre intermédiaire
+R6.03 Connaissance de l'entreprise
+
+
+semestre 6 IOM:
+
+SAÉ6.IOM.01 Mettre en place un réseau IoT répondant à un cahier des charges
+R6.IOM.04 Chaînes complètes IoT
