@@ -86,9 +86,10 @@ nav ul li a:hover {
 .left   { transform: rotateY(-90deg) translateZ(150px); }
 
 .side img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 250px; /* Fixez une largeur pour toutes les images */
+    height: 250px; /* Fixez une hauteur pour toutes les images */
+    object-fit: contain; /* Maintient les proportions de l'image à l'intérieur des dimensions */
+    margin: auto; /* Centre l'image à l'intérieur de chaque face */
 }
 
 /* Animation de rotation du cube */
