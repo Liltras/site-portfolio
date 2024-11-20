@@ -1,20 +1,36 @@
-/* Style global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Minimum height of the body to ensure footer sticks to the bottom */
+    min-height: 100vh;
+    position: relative;
 }
 
-/* Contenu principal */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px, 100px 100px, 100px 100px;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.4;
+}
+
 main {
-    flex-grow: 1; /* Cela permet de pousser le footer au bas de la page */
+    flex-grow: 1;
 }
 
-/* Barre de navigation */
 nav {
     background-color: #333;
     width: 100%;
@@ -54,19 +70,18 @@ nav ul li a:hover {
     color: #f1f1f1;
 }
 
-/* Carrousel Cube */
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh; /* 80% de la hauteur de l'écran pour centrer le carrousel */
-    perspective: 1000px;
+    height: 90vh;
+    perspective: 1200px;
 }
 
 .cube {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     transform-style: preserve-3d;
     animation: rotateCube 40s infinite linear;
 }
@@ -80,19 +95,18 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.front  { transform: translateZ(150px); }
-.right  { transform: rotateY(90deg) translateZ(150px); }
-.back   { transform: rotateY(180deg) translateZ(150px); }
-.left   { transform: rotateY(-90deg) translateZ(150px); }
+.front  { transform: translateZ(200px); }
+.right  { transform: rotateY(90deg) translateZ(200px); }
+.back   { transform: rotateY(180deg) translateZ(200px); }
+.left   { transform: rotateY(-90deg) translateZ(200px); }
 
 .side img {
-    width: 250px; /* Fixez une largeur pour toutes les images */
-    height: 250px; /* Fixez une hauteur pour toutes les images */
-    object-fit: contain; /* Maintient les proportions de l'image à l'intérieur des dimensions */
-    margin: auto; /* Centre l'image à l'intérieur de chaque face */
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin: auto;
 }
 
-/* Animation de rotation du cube */
 @keyframes rotateCube {
     0% {
         transform: rotateY(0deg);
@@ -111,33 +125,48 @@ nav ul li a:hover {
     }
 }
 
-/* Texte sous le carrousel */
 .carousel-text {
     text-align: center;
-    margin-top: 30px; /* Espacement avec le carrousel */
+    margin-top: 30px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #2c5364;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 80%; /* Largeur du texte */
-    max-width: 800px; /* Largeur maximale pour que le texte ne s'étire pas trop */
+    width: 80%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.carousel-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px, 100px 100px, 100px 100px;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.5;
+}
+
 .carousel-text h2 {
     font-size: 24px;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .carousel-text p {
     font-size: 18px;
-    color: #555;
+    color: #000000;
     line-height: 1.6;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;

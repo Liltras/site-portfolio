@@ -1,15 +1,32 @@
-/* Global body settings */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
 }
 
-/* Barre de navigation */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px, 100px 100px, 100px 100px;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.4;
+}
+
 nav {
     background-color: #333;
     width: 100%;
@@ -39,25 +56,22 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Conteneur principal */
 .content-container {
     padding: 40px;
     max-width: 1200px;
     margin: 120px auto 20px;
 }
 
-/* Titre principal */
 .content-container h1 {
     text-align: center;
     font-size: 36px;
-    color: #333;
+    color: #a8e6ff;
     margin-bottom: 40px;
 }
 
-/* Titres des semestres */
 .semester-title {
     font-size: 28px;
-    color: #4caf50;
+    color: #a8e6ff;
     text-align: center;
     margin: 40px 0 20px;
     border-bottom: 2px solid #ddd;
@@ -66,52 +80,46 @@ nav ul li a {
     display: block;
 }
 
-/* Grille des compétences */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-/* Style des cartes de compétences */
 .skill-card {
-    background-color: #fff;
+    background-color: #2c5364;
+    color: #a8e6ff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
-    position: relative; /* Pour gérer la position de la barre de progression */
+    position: relative;
 }
 
-/* Au survol, on applique un léger agrandissement de la carte */
 .skill-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Barre de progression */
 .progress-bar {
     width: 100%;
-    background-color: #e0e0e0; /* Fond gris clair pour la barre */
+    background-color: #e0e0e0;
     border-radius: 10px;
     height: 20px;
     margin-top: 10px;
 }
 
-/* Remplissage de la barre de progression */
 .progress-fill {
     height: 100%;
-    background-color: #4caf50; /* Couleur verte pour la barre */
+    background-color: #000000;
     border-radius: 10px;
-    width: 50%; /* Ajuster cette valeur pour représenter le pourcentage */
+    width: 50%;
 }
 
-/* Changer la couleur de la barre de progression lorsqu'elle est survolée */
 .skill-card:hover .progress-bar .progress-fill {
-    background-color: #388e3c; /* Change la couleur lors du survol */
+    background-color: #000000;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
